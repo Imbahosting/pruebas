@@ -41,7 +41,10 @@ public class controladorprueba
     {
         estado="#";
     }
-
+public void mensajeandres()
+{
+    JSFUtil.crearMensajeINFO("hola soy andres");
+}
     
     
     public void ingresarnombre()
