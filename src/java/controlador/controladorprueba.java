@@ -11,7 +11,7 @@ import javax.faces.bean.ManagedBean;
 
 import javax.faces.bean.SessionScoped;
 import modelo.util.JSFUtil;
-import net.sf.jasperreports.compilers.JavaScriptEvaluatorScope;
+
 
 /**
  *
@@ -102,5 +102,9 @@ public class controladorprueba
         this.estado = estado;
     }
     
+    public String mensajePaulina(){
+        String res="Hola hola este es mi msj soy Paulina";
+        return res;
+    }
     
 }
