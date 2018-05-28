@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <b:container>
+        <h:form>
+            <b:commandButton look="success" value="Editar" onclick="$('.modalPseudoClass2').modal();return false;"  >
+                
+               <b:iconAwesome name="edit" /> 
+            </b:commandButton>
+  
+  </h:form>
+            </b:container>
+        <b:modal id="amodal" title="Editar evento" styleClass="modalPseudoClass1" style="modal-sm">
+    <h:form>
+    <p>Modal body</p>
+    <f:facet name="footer">
+        <b:button value="close" dismiss="modal" onclick="return false;"/>
+        <b:button value="Ok" look="primary" dismiss="modal" onclick="return false;"/>
+    </f:facet>
+    </h:form>
+</b:modal>
+        
+        <b:modal id="modal" styleClass="modalPseudoClass2" size="modal-lg" closable="false" >
+
+                        <b:form id="modalform">
+                       hola a todos
+                        </b:form>
+      </b:modal>
+        
+    </h:body>
+</html>
+         

@@ -24,6 +24,7 @@ public class controladorprueba
     private List<String> nombres;
     public String nombre;
     public List<Object> nombreslistas;
+    public String estado="refresh";
   
 
     public controladorprueba() {
@@ -31,6 +32,14 @@ public class controladorprueba
     nombres=new ArrayList<>();
      nombreslistas= new ArrayList<>();
    
+    }
+    public void activar()
+    {
+        estado="refresh";
+    }
+    public void desactivar()
+    {
+        estado="#";
     }
 
     
@@ -83,6 +92,14 @@ public class controladorprueba
 
     public void setNombreslistas(List<Object> nombreslistas) {
         this.nombreslistas = nombreslistas;
+    }
+
+    public String getEstado() {
+        return estado;
+    }
+
+    public void setEstado(String estado) {
+        this.estado = estado;
     }
     
     
