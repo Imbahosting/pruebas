@@ -22,10 +22,11 @@
             <b:inputText value="#{controladorprueba.nombre}"></b:inputText> <b:commandButton value="agregar" action="#{controladorprueba.ingresarnombre}" update="tabla"></b:commandButton>
             
            
-            <b:commandButton value="nuevo" action="#{controladorprueba.crearnueva()}"></b:commandButton>
-            <b:commandButton value="ver" action="#{controladorprueba.obtenerregistro()}" update="mensaje"></b:commandButton>
+            <b:commandButton value="nueva factura" action="#{controladorprueba.crearnueva()}"></b:commandButton>
+            <b:commandButton value="ver factura" action="#{controladorprueba.obtenerregistro()}" update="mensaje"></b:commandButton>
          
-            <b:alert> hola a todos </b:alert>
+            <b:alert> Hola a todos mis amigos </b:alert>
+            
             <b:commandButton value="create coman"></b:commandButton>
             
             <b:dataTable var="a"  value="#{controladorprueba.nombres}" id="tabla">
@@ -39,8 +40,10 @@
         </b:dataTable>
             
             <b:panel title="Panel de Paulina" look="danger">
-                Hola amor..!!
+                Hola babosis..!!
             </b:panel>
+            
+            
 		
             <b:tabView>
                 <b:tab title="fact"></b:tab>
